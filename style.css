@@ -1,0 +1,217 @@
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f6f8;
+    color: #263238;
+}
+
+h1 {
+    color: #1e3a5f;
+    font-size: 32px;
+}
+
+h2 {
+    color: #2c5282;
+}
+
+p {
+    color: #263238;
+    line-height: 1.6;
+}
+
+section {
+    background-color: white;
+    padding: 40px;
+    margin-bottom: 20px;
+    border: 1px solid #cccccc;
+    border-radius: 30px;
+}
+
+#about {
+    background-color: #fff7e5;
+    padding: 20px;
+}
+
+#experiences {
+    background-color: #ebffee;
+    padding: 20px;
+}
+
+nav {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    flex-wrap: wrap;
+}
+
+nav a {
+    padding: 10px 15px;
+    background-color: white;
+    color: #1e3a5f;
+    border: 1px solid #cccccc;
+    border-radius: 8px;
+    text-decoration: none;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 12px;
+    border: 2px solid #cccccc;
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+}
+
+footer p {
+    color: #5e6c7a;
+}
+
+.photo-layout {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+@media (max-width: 600px) {
+    section {
+        padding: 20px;
+        border-radius: 15px;
+    }
+
+    h1 {
+        font-size: 26px;
+    }
+
+    .photo-layout {
+    flex-direction: column;
+    align-items: flex-start;
+}
+}
+
+nav a:hover {
+    background-color: #dbeafe;
+    color: #1e3a5f;
+}
+
+nav a[aria-current="page"] {
+    font-weight: bold;
+}
+
+.page-home nav a[aria-current="page"] {
+    background-color: #dbeafe;
+}
+
+.page-about nav a[aria-current="page"],
+.page-about main section {
+    background-color: #fff7e5;
+}
+
+.page-portfolio nav a[aria-current="page"],
+.page-portfolio main section {
+    background-color: #ebffee;
+}
+
+.photo-gallery {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.photo-gallery figure {
+    flex: 1 1 220px;
+    max-width: 350px;
+    margin: 0;
+}
+
+.photo-gallery img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.photo-gallery figcaption {
+    margin-top: 8px;
+    font-size: 14px;
+    color: #5e6c7a;
+}
+
+/* Homepage hero section */
+
+.page-home .hero {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 30px;
+    padding: 35px;
+    background-color: white;
+}
+
+/* Introduction */
+
+.hero-intro {
+    flex: 1 1 260px;
+    min-width: 0;
+}
+
+.hero-intro h2 {
+    font-size: 40px;
+    line-height: 1.2;
+    margin-bottom: 20px;
+}
+
+.hero-intro p {
+    font-size: 17px;
+    line-height: 1.7;
+}
+
+/* Homepage photograph */
+
+.hero-picture {
+    flex: 1 1 280px;
+    min-width: 0;
+}
+
+.hero-picture img {
+    width: 100%;
+    height: auto;
+    display: block;
+    border-radius: 20px;
+}
+
+/* Homepage links */
+
+.hero-links {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+    margin-top: 25px;
+}
+
+.hero-links a {
+    padding: 12px 18px;
+    background-color: #1e3a5f;
+    color: white;
+    border-radius: 10px;
+    text-decoration: none;
+}
+
+/* Mobile adjustments */
+
+@media (max-width: 600px) {
+    .page-home .hero {
+        padding: 20px;
+        gap: 20px;
+    }
+
+    .hero-intro h2 {
+        font-size: 28px;
+    }
+}
+.hero-links a:hover,
+.hero-links a:focus-visible {
+    background-color: #2c5282;
+}
