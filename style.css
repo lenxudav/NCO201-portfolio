@@ -368,3 +368,18 @@ nav a[aria-current="page"] {
 .hero-carousel::-webkit-scrollbar {
     display: none;
 }
+
+/* Remove gallery image letterboxing on mobile */
+
+@media (max-width: 600px) {
+
+    .photo-gallery img {
+        width: 100%;
+        height: auto;
+        max-height: none;
+        aspect-ratio: auto;
+        object-fit: contain;
+        background-color: transparent;
+    }
+
+}
